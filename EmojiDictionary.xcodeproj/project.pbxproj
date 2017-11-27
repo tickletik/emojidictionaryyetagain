@@ -12,6 +12,7 @@
 		E37E46091FCCA53000918EB9 /* EmojiDictionary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E37E46071FCCA53000918EB9 /* EmojiDictionary.xcdatamodeld */; };
 		E37E460B1FCCA53000918EB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E37E460A1FCCA53000918EB9 /* Assets.xcassets */; };
 		E37E460E1FCCA53000918EB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E37E460C1FCCA53000918EB9 /* LaunchScreen.storyboard */; };
+		E37E46161FCCA5C400918EB9 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37E46151FCCA5C400918EB9 /* Emoji.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		E37E460A1FCCA53000918EB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E37E460D1FCCA53000918EB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E37E460F1FCCA53000918EB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E37E46151FCCA5C400918EB9 /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				E37E46001FCCA53000918EB9 /* AppDelegate.swift */,
 				E37E46041FCCA53000918EB9 /* Main.storyboard */,
+				E37E46151FCCA5C400918EB9 /* Emoji.swift */,
 				E37E460A1FCCA53000918EB9 /* Assets.xcassets */,
 				E37E460C1FCCA53000918EB9 /* LaunchScreen.storyboard */,
 				E37E460F1FCCA53000918EB9 /* Info.plist */,
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E37E46161FCCA5C400918EB9 /* Emoji.swift in Sources */,
 				E37E46091FCCA53000918EB9 /* EmojiDictionary.xcdatamodeld in Sources */,
 				E37E46011FCCA53000918EB9 /* AppDelegate.swift in Sources */,
 			);
