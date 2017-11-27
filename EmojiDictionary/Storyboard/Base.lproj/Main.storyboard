@@ -12,7 +12,7 @@
         <!--Root View Controller-->
         <scene sceneID="mxP-6c-ri8">
             <objects>
-                <tableViewController id="PVR-PR-MSv" sceneMemberID="viewController">
+                <tableViewController id="PVR-PR-MSv" customClass="EmojiTableViewController" customModule="EmojiDictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wZ1-vs-bxy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
