@@ -57,14 +57,30 @@
 			isa = PBXGroup;
 			children = (
 				E37E46001FCCA53000918EB9 /* AppDelegate.swift */,
-				E37E46041FCCA53000918EB9 /* Main.storyboard */,
-				E37E46151FCCA5C400918EB9 /* Emoji.swift */,
+				E37E46181FCCA6B700918EB9 /* Models */,
+				E37E46171FCCA6A400918EB9 /* Storyboard */,
 				E37E460A1FCCA53000918EB9 /* Assets.xcassets */,
-				E37E460C1FCCA53000918EB9 /* LaunchScreen.storyboard */,
 				E37E460F1FCCA53000918EB9 /* Info.plist */,
 				E37E46071FCCA53000918EB9 /* EmojiDictionary.xcdatamodeld */,
 			);
 			path = EmojiDictionary;
+			sourceTree = "<group>";
+		};
+		E37E46171FCCA6A400918EB9 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				E37E46041FCCA53000918EB9 /* Main.storyboard */,
+				E37E460C1FCCA53000918EB9 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		E37E46181FCCA6B700918EB9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E37E46151FCCA5C400918EB9 /* Emoji.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
