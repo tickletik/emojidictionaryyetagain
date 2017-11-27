@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E37E46011FCCA53000918EB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37E46001FCCA53000918EB9 /* AppDelegate.swift */; };
-		E37E46031FCCA53000918EB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37E46021FCCA53000918EB9 /* ViewController.swift */; };
 		E37E46061FCCA53000918EB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E37E46041FCCA53000918EB9 /* Main.storyboard */; };
 		E37E46091FCCA53000918EB9 /* EmojiDictionary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E37E46071FCCA53000918EB9 /* EmojiDictionary.xcdatamodeld */; };
 		E37E460B1FCCA53000918EB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E37E460A1FCCA53000918EB9 /* Assets.xcassets */; };
@@ -18,7 +17,6 @@
 /* Begin PBXFileReference section */
 		E37E45FD1FCCA53000918EB9 /* EmojiDictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojiDictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E37E46001FCCA53000918EB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E37E46021FCCA53000918EB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E37E46051FCCA53000918EB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E37E46081FCCA53000918EB9 /* EmojiDictionary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EmojiDictionary.xcdatamodel; sourceTree = "<group>"; };
 		E37E460A1FCCA53000918EB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				E37E46001FCCA53000918EB9 /* AppDelegate.swift */,
-				E37E46021FCCA53000918EB9 /* ViewController.swift */,
 				E37E46041FCCA53000918EB9 /* Main.storyboard */,
 				E37E460A1FCCA53000918EB9 /* Assets.xcassets */,
 				E37E460C1FCCA53000918EB9 /* LaunchScreen.storyboard */,
@@ -139,7 +136,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E37E46031FCCA53000918EB9 /* ViewController.swift in Sources */,
 				E37E46091FCCA53000918EB9 /* EmojiDictionary.xcdatamodeld in Sources */,
 				E37E46011FCCA53000918EB9 /* AppDelegate.swift in Sources */,
 			);
