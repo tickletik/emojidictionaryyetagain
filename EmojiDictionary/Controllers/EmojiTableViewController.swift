@@ -66,6 +66,12 @@ class EmojiTableViewController: UITableViewController {
         cell.textLabel?.text = "\(emoji.symbol) - \(emoji.name)"
         cell.detailTextLabel?.text = emoji.description
         
+        /*
+            NOTE: must be placed here, because this is where cells
+            are initialized
+        */
+        cell.showsReorderControl = true
+        
         return cell
     }
     
