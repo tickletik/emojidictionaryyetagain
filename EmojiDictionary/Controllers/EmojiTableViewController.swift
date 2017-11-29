@@ -82,6 +82,22 @@ class EmojiTableViewController: UITableViewController {
         print("\(emoji.symbol) \(indexPath)")
     }
     
+    
+    
+     // Override to support rearranging the table view.
+    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath)
+    {
+        /*
+ how to do this:
+            we are modifying the DATA object "emojis", then reloading the data into the
+            table
+        */
+        let movedEmoji = emojis.remove(at: fromIndexPath.row)
+        emojis.insert(movedEmoji, at: to.row)
+        
+        tableView.reloadData()
+    }
+ 
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -102,12 +118,6 @@ class EmojiTableViewController: UITableViewController {
     }
     */
 
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
 
     /*
     // Override to support conditional rearranging of the table view.
