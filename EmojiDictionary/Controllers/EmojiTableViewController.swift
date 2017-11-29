@@ -36,13 +36,6 @@ class EmojiTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -55,16 +48,27 @@ class EmojiTableViewController: UITableViewController {
         }
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        
+        // get a reusable cell from the stack
+        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "EmojiCell", for: indexPath)
+        
+        // get data from emojis array
+        
+        /*
+            NOTE: indexPath is NOT an int, it is an object of TYPE IndexPath
+ 
+            this object contains the integer value of the necessary row, using paramter "row"
+        */
+        let emoji = emojis[indexPath.row]
+        
+        // set the data on the cell
+        cell.textLabel?.text = "\(emoji.symbol) - \(emoji.name)"
+        cell.detailTextLabel?.text = emoji.description
+        
         return cell
     }
-    */
-
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
