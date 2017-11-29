@@ -33,7 +33,7 @@ class EmojiTableViewController: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -80,12 +80,6 @@ class EmojiTableViewController: UITableViewController {
         let emoji = emojis[indexPath.row]
         
         print("\(emoji.symbol) \(indexPath)")
-    }
-    
-    @IBAction func editButtonTapped(_ sender: UIBarButtonItem) {
-        let tableViewEditingMode = tableView.isEditing
-        
-        tableView.setEditing(!tableViewEditingMode, animated: true)
     }
     
     /*
