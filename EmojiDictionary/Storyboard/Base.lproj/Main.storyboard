@@ -61,6 +61,11 @@
                                         <constraint firstAttribute="trailing" secondItem="3FV-fF-HWE" secondAttribute="trailing" id="rWf-jk-maI"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="Vsk-gv-ATm" id="Qou-h7-Gsk"/>
+                                    <outlet property="nameLabel" destination="Jg7-LR-BQU" id="93f-Yn-Imr"/>
+                                    <outlet property="symbolLabel" destination="rCx-Xc-Fyq" id="Ett-cw-buk"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
