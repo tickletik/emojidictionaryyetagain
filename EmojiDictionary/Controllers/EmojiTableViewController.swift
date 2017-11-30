@@ -81,6 +81,14 @@ class EmojiTableViewController: UITableViewController {
         return .delete
     }
     
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            // delete the row from the data source
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        } else if editingStyle == .insert {
+            // create a new instance of approrpirate class, insert into array, add new row to the tableview
+        }
+    }
     
     /*
     // MARK: - Navigation
