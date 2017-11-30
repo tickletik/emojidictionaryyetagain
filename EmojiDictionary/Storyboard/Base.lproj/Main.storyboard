@@ -24,6 +24,28 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DZ0-u5-QPQ" id="nv7-Ct-FiO">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DPT-LW-LsU" userLabel="Horizontal Stack">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPS-v6-FSy">
+                                                    <rect key="frame" x="0.0" y="0.0" width="42" height="43.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="bIC-Nw-ShE" userLabel="Vertical Stack">
+                                                    <rect key="frame" x="42" y="0.0" width="333" height="43.5"/>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="DPT-LW-LsU" secondAttribute="trailing" id="Vmj-cl-Xlx"/>
+                                        <constraint firstItem="DPT-LW-LsU" firstAttribute="top" secondItem="nv7-Ct-FiO" secondAttribute="top" id="ZcZ-ON-3Hl"/>
+                                        <constraint firstAttribute="bottom" secondItem="DPT-LW-LsU" secondAttribute="bottom" id="cHe-yL-ufb"/>
+                                        <constraint firstItem="DPT-LW-LsU" firstAttribute="leading" secondItem="nv7-Ct-FiO" secondAttribute="leading" id="qaH-Yf-Nci"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
