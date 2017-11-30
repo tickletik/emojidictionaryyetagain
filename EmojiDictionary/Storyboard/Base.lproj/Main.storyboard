@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EmojiCell" id="DZ0-u5-QPQ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EmojiCell" id="DZ0-u5-QPQ" customClass="EmojiCell" customModule="EmojiDictionary" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DZ0-u5-QPQ" id="nv7-Ct-FiO">
@@ -61,6 +61,11 @@
                                         <constraint firstItem="DPT-LW-LsU" firstAttribute="leading" secondItem="nv7-Ct-FiO" secondAttribute="leading" id="qaH-Yf-Nci"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="MJe-zC-CN0" id="q4b-CP-njN"/>
+                                    <outlet property="nameLabel" destination="X1c-RM-Nr5" id="jTT-LJ-fxa"/>
+                                    <outlet property="symbolLabel" destination="HPS-v6-FSy" id="KEM-bo-9LQ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
