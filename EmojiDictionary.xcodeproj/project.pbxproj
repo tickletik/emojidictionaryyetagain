@@ -14,6 +14,7 @@
 		E37E460E1FCCA53000918EB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E37E460C1FCCA53000918EB9 /* LaunchScreen.storyboard */; };
 		E37E46161FCCA5C400918EB9 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37E46151FCCA5C400918EB9 /* Emoji.swift */; };
 		E37E461A1FCCA74D00918EB9 /* EmojiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37E46191FCCA74D00918EB9 /* EmojiTableViewController.swift */; };
+		E3F927211FD013030025DB86 /* EmojiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F927201FD013030025DB86 /* EmojiCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E37E460F1FCCA53000918EB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E37E46151FCCA5C400918EB9 /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 		E37E46191FCCA74D00918EB9 /* EmojiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTableViewController.swift; sourceTree = "<group>"; };
+		E3F927201FD013030025DB86 /* EmojiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		E37E461B1FCCA75200918EB9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E3F927201FD013030025DB86 /* EmojiCell.swift */,
 				E37E46191FCCA74D00918EB9 /* EmojiTableViewController.swift */,
 			);
 			path = Controllers;
@@ -168,6 +171,7 @@
 			files = (
 				E37E461A1FCCA74D00918EB9 /* EmojiTableViewController.swift in Sources */,
 				E37E46161FCCA5C400918EB9 /* Emoji.swift in Sources */,
+				E3F927211FD013030025DB86 /* EmojiCell.swift in Sources */,
 				E37E46091FCCA53000918EB9 /* EmojiDictionary.xcdatamodeld in Sources */,
 				E37E46011FCCA53000918EB9 /* AppDelegate.swift in Sources */,
 			);
