@@ -24,6 +24,17 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DZ0-u5-QPQ" id="nv7-Ct-FiO">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3FV-fF-HWE" userLabel="Horizontal Stack">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="3FV-fF-HWE" secondAttribute="bottom" id="Kst-7p-N7l"/>
+                                        <constraint firstItem="3FV-fF-HWE" firstAttribute="top" secondItem="nv7-Ct-FiO" secondAttribute="top" id="YyG-1E-444"/>
+                                        <constraint firstItem="3FV-fF-HWE" firstAttribute="leading" secondItem="nv7-Ct-FiO" secondAttribute="leading" id="hmR-e9-X62"/>
+                                        <constraint firstAttribute="trailing" secondItem="3FV-fF-HWE" secondAttribute="trailing" id="rWf-jk-maI"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
