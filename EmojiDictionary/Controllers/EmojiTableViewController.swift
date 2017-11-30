@@ -84,10 +84,18 @@ class EmojiTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // create a new instance of approrpirate class, insert into array, add new row to the tableview
-        }
+            emojis.remove(at: indexPath.row)
+            
+            /*
+                NOTE:
+                deleteRows at: takes an ARRAY of whatever it is it's deleting
+ 
+                in this case we are passing a single item, but it still has to be put into an array
+             
+                the "with" parameter refers to TableAnimation styles
+            */
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+       }
     }
     
     /*
