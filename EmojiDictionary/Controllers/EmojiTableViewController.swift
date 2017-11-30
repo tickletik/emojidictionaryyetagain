@@ -53,26 +53,10 @@ class EmojiTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        // get a reusable cell from the stack
-        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "EmojiCell", for: indexPath) as! EmojiCell
-        
-        // get data from emojis array
-        
-        /*
-            NOTE: indexPath is NOT an int, it is an object of TYPE IndexPath
- 
-            this object contains the integer value of the necessary row, using paramter "row"
-        */
+        let cell = tableView.dequeueReusableCell(withIdentifier: "EmojiCell", for: indexPath) as! EmojiCell
         let emoji = emojis[indexPath.row]
         
-        // set the data on the cell
-        cell.textLabel?.text = "\(emoji.symbol) - \(emoji.name)"
-        cell.detailTextLabel?.text = emoji.description
-        
-        /*
-            NOTE: must be placed here, because this is where cells
-            are initialized
-        */
+        cell.update(with: emoji)
         cell.showsReorderControl = true
         
         return cell
