@@ -27,8 +27,10 @@ class AddEditTableVC: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
         if let emoji = emoji {
-            print("WHOOHOOO! I HAVE SOMETHING I RULE!")
-            print(emoji)
+            symbolTextField.text = emoji.symbol
+            nameTextField.text = emoji.name
+            descriptionTextField.text = emoji.description
+            usageTextField.text = emoji.usage
         } else {
             print("I AM EMPTY AND I SUSUUUUUUUCK")
         }
