@@ -9,7 +9,14 @@
 import UIKit
 
 class AddEditTableVC: UITableViewController {
+    
+    var emoji:Emoji?
 
+    @IBOutlet weak var symbolTextField: UITextField!
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var descriptionTextField: UITextField!
+    @IBOutlet weak var usageTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +25,13 @@ class AddEditTableVC: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        if let emoji = emoji {
+            print("WHOOHOOO! I HAVE SOMETHING I RULE!")
+            print(emoji)
+        } else {
+            print("I AM EMPTY AND I SUSUUUUUUUCK")
+        }
     }
   
     /*
