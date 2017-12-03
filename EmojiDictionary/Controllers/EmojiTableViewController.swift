@@ -126,10 +126,15 @@ class EmojiTableViewController: UITableViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         
+        
         if segue.identifier == "EditSegue" {
             let indexPath = tableView.indexPathForSelectedRow!
             let emoji = emojis[indexPath.row]
-            let addEditTableVC = segue.destination as! AddEditTableVC
+            
+            //let addEditTableVC = segue.destination.childViewControllers[0] as! AddEditTableVC
+            
+            let navController = segue.destination as! UINavigationController
+            let addEditTableVC = navController.topViewController as! AddEditTableVC
             
             addEditTableVC.emoji = emoji
         }

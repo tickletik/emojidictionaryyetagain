@@ -65,7 +65,7 @@
                                     <outlet property="descriptionLabel" destination="Vsk-gv-ATm" id="Qou-h7-Gsk"/>
                                     <outlet property="nameLabel" destination="Jg7-LR-BQU" id="93f-Yn-Imr"/>
                                     <outlet property="symbolLabel" destination="rCx-Xc-Fyq" id="Ett-cw-buk"/>
-                                    <segue destination="Hrm-KD-ARf" kind="presentation" identifier="EditSegue" id="Bgg-eJ-nHk"/>
+                                    <segue destination="PSh-9W-U7B" kind="presentation" identifier="EditSegue" id="qSa-3B-Djn"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -77,7 +77,7 @@
                     <navigationItem key="navigationItem" title="Root View Controller" id="vzA-20-Gz5">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="jbC-sH-740">
                             <connections>
-                                <segue destination="Hrm-KD-ARf" kind="presentation" identifier="AddSegue" id="bYR-Ol-xtJ"/>
+                                <segue destination="PSh-9W-U7B" kind="presentation" id="XQ2-72-3L2"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -86,7 +86,7 @@
             </objects>
             <point key="canvasLocation" x="-284" y="9"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Static Table-->
         <scene sceneID="d85-xS-pPn">
             <objects>
                 <tableViewController id="Hrm-KD-ARf" customClass="AddEditTableVC" customModule="EmojiDictionary" customModuleProvider="target" sceneMemberID="viewController">
@@ -131,7 +131,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="twM-5H-Yho">
-                                                    <rect key="frame" x="8" y="0.0" width="359" height="43"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -139,9 +139,9 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="twM-5H-Yho" firstAttribute="top" secondItem="njb-VH-N8m" secondAttribute="top" id="Oge-ew-GcD"/>
-                                                <constraint firstItem="twM-5H-Yho" firstAttribute="leading" secondItem="njb-VH-N8m" secondAttribute="leading" constant="8" id="cWy-0B-Ppm"/>
+                                                <constraint firstItem="twM-5H-Yho" firstAttribute="leading" secondItem="njb-VH-N8m" secondAttribute="leading" id="cWy-0B-Ppm"/>
                                                 <constraint firstAttribute="bottom" secondItem="twM-5H-Yho" secondAttribute="bottom" id="s1f-T5-5Yb"/>
-                                                <constraint firstAttribute="trailing" secondItem="twM-5H-Yho" secondAttribute="trailing" constant="8" id="z0G-QN-QK1"/>
+                                                <constraint firstAttribute="trailing" secondItem="twM-5H-Yho" secondAttribute="trailing" id="z0G-QN-QK1"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -157,7 +157,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Od-3v-2Hw">
-                                                    <rect key="frame" x="8" y="0.0" width="359" height="43.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -165,8 +165,8 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="6Od-3v-2Hw" firstAttribute="top" secondItem="4To-Zl-H7g" secondAttribute="top" id="AMp-IP-X0j"/>
-                                                <constraint firstItem="6Od-3v-2Hw" firstAttribute="leading" secondItem="4To-Zl-H7g" secondAttribute="leading" constant="8" id="HrH-Hp-1Ib"/>
-                                                <constraint firstAttribute="trailing" secondItem="6Od-3v-2Hw" secondAttribute="trailing" constant="8" id="SFV-8t-qZ2"/>
+                                                <constraint firstItem="6Od-3v-2Hw" firstAttribute="leading" secondItem="4To-Zl-H7g" secondAttribute="leading" id="HrH-Hp-1Ib"/>
+                                                <constraint firstAttribute="trailing" secondItem="6Od-3v-2Hw" secondAttribute="trailing" id="SFV-8t-qZ2"/>
                                                 <constraint firstAttribute="bottom" secondItem="6Od-3v-2Hw" secondAttribute="bottom" id="cFA-5J-KDe"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -205,7 +205,10 @@
                             <outlet property="delegate" destination="Hrm-KD-ARf" id="dyH-eM-OBQ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Dbl-jq-vUh"/>
+                    <navigationItem key="navigationItem" title="Static Table" id="Dbl-jq-vUh">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="GlF-8W-r1I"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Imy-p6-SM4"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="descriptionTextField" destination="6Od-3v-2Hw" id="8y2-VJ-AqD"/>
                         <outlet property="nameTextField" destination="twM-5H-Yho" id="VdN-pC-uWw"/>
@@ -215,7 +218,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vKE-a4-RGN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="665" y="9"/>
+            <point key="canvasLocation" x="1294" y="9"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9mS-T0-KYp">
@@ -231,7 +234,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ko4-wG-7Tu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1332" y="-797"/>
+            <point key="canvasLocation" x="554" y="9"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jGB-Gu-Unt">
@@ -251,6 +254,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="bYR-Ol-xtJ"/>
+        <segue reference="XQ2-72-3L2"/>
     </inferredMetricsTieBreakers>
 </document>
