@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E36A536C1FD4315600428D1E /* AddEditTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36A536B1FD4315600428D1E /* AddEditTableVC.swift */; };
 		E37E46011FCCA53000918EB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37E46001FCCA53000918EB9 /* AppDelegate.swift */; };
 		E37E46061FCCA53000918EB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E37E46041FCCA53000918EB9 /* Main.storyboard */; };
 		E37E46091FCCA53000918EB9 /* EmojiDictionary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E37E46071FCCA53000918EB9 /* EmojiDictionary.xcdatamodeld */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E36A536B1FD4315600428D1E /* AddEditTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditTableVC.swift; sourceTree = "<group>"; };
 		E37E45FD1FCCA53000918EB9 /* EmojiDictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojiDictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E37E46001FCCA53000918EB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E37E46051FCCA53000918EB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			children = (
 				E3E8727D1FD03A2600CAF776 /* EmojiTableViewCell.swift */,
 				E37E46191FCCA74D00918EB9 /* EmojiTableViewController.swift */,
+				E36A536B1FD4315600428D1E /* AddEditTableVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E37E461A1FCCA74D00918EB9 /* EmojiTableViewController.swift in Sources */,
+				E36A536C1FD4315600428D1E /* AddEditTableVC.swift in Sources */,
 				E37E46161FCCA5C400918EB9 /* Emoji.swift in Sources */,
 				E3E8727E1FD03A2600CAF776 /* EmojiTableViewCell.swift in Sources */,
 				E37E46091FCCA53000918EB9 /* EmojiDictionary.xcdatamodeld in Sources */,
