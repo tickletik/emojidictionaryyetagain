@@ -19,6 +19,11 @@ class AddEditTableVC: UITableViewController {
     @IBOutlet weak var descriptionTextField: UITextField!
     @IBOutlet weak var usageTextField: UITextField!
     
+    @IBAction func textEditingChanged(_ sender: UITextField) {
+        updateSaveButtonState()
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
