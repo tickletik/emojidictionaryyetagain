@@ -220,10 +220,14 @@
                     <navigationItem key="navigationItem" title="Static Table" id="Dbl-jq-vUh">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="GlF-8W-r1I">
                             <connections>
-                                <segue destination="XZP-dz-lOg" kind="unwind" unwindAction="unwindToThisWithSegue:" id="h2a-Tp-Fis"/>
+                                <segue destination="XZP-dz-lOg" kind="unwind" identifier="cancelUnwind" unwindAction="unwindToThisWithSegue:" id="h2a-Tp-Fis"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Imy-p6-SM4"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Imy-p6-SM4">
+                            <connections>
+                                <segue destination="XZP-dz-lOg" kind="unwind" identifier="saveUnwind" unwindAction="unwindToThisWithSegue:" id="3Al-Fx-gH2"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="descriptionTextField" destination="6Od-3v-2Hw" id="8y2-VJ-AqD"/>

@@ -52,14 +52,23 @@ class AddEditTableVC: UITableViewController {
         saveButton.isEnabled = !symbol.isEmpty && !name.isEmpty && !desc.isEmpty && !usage.isEmpty
     }
   
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+      
+        super.prepare(for: segue, sender: sender)
+        
+        guard segue.identifier == "saveUnwind" else { return }
+        
+        let symbol = symbolTextField.text ?? ""
+        let name = nameTextField.text ?? ""
+        let desc = descriptionTextField.text ?? ""
+        let usage = usageTextField.text ?? ""
+        
+        emoji = Emoji(symbol: symbol, name: name, description: desc, usage: usage)
     }
-    */
+    
 
 }
