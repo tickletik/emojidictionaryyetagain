@@ -12,6 +12,8 @@ class AddEditTableVC: UITableViewController {
     
     var emoji:Emoji?
 
+    @IBOutlet weak var saveButton: UIBarButtonItem!
+    
     @IBOutlet weak var symbolTextField: UITextField!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var descriptionTextField: UITextField!
@@ -31,9 +33,18 @@ class AddEditTableVC: UITableViewController {
             nameTextField.text = emoji.name
             descriptionTextField.text = emoji.description
             usageTextField.text = emoji.usage
-        } else {
-            print("I AM EMPTY AND I SUSUUUUUUUCK")
         }
+        
+        updateSaveButtonState()
+    }
+    
+    func updateSaveButtonState() {
+        let symbol = symbolTextField.text ?? ""
+        let name = nameTextField.text ?? ""
+        let desc = descriptionTextField.text ?? ""
+        let usage = usageTextField.text ?? ""
+        
+        saveButton.isEnabled = !symbol.isEmpty && !name.isEmpty && !desc.isEmpty && !usage.isEmpty
     }
   
     /*

@@ -134,11 +134,14 @@ class EmojiTableViewController: UITableViewController {
             //let addEditTableVC = segue.destination.childViewControllers[0] as! AddEditTableVC
             
             let navController = segue.destination as! UINavigationController
-            let addEditTableVC = navController.topViewController as! AddEditTableVC
+            let addEditTableVC = navController.childViewControllers[0] as! AddEditTableVC
             
             addEditTableVC.emoji = emoji
         }
     }
+    
+    @IBAction func unwindToThis(segue: UIStoryboardSegue) {}
+    
  
 
 }

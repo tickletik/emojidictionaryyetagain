@@ -206,17 +206,23 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Static Table" id="Dbl-jq-vUh">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="GlF-8W-r1I"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="GlF-8W-r1I">
+                            <connections>
+                                <segue destination="XZP-dz-lOg" kind="unwind" unwindAction="unwindToThisWithSegue:" id="h2a-Tp-Fis"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="Imy-p6-SM4"/>
                     </navigationItem>
                     <connections>
                         <outlet property="descriptionTextField" destination="6Od-3v-2Hw" id="8y2-VJ-AqD"/>
                         <outlet property="nameTextField" destination="twM-5H-Yho" id="VdN-pC-uWw"/>
+                        <outlet property="saveButton" destination="Imy-p6-SM4" id="B5A-Tx-HPn"/>
                         <outlet property="symbolTextField" destination="Nnd-gF-Jo3" id="HbF-n3-2d0"/>
                         <outlet property="usageTextField" destination="1dQ-i7-Usr" id="jp4-gT-gCm"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vKE-a4-RGN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="XZP-dz-lOg" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1294" y="9"/>
         </scene>
